@@ -1,0 +1,15 @@
+/Users/markova_a/Documents/practise_13_01/bin/Debug/net9.0/practise_13_01
+/Users/markova_a/Documents/practise_13_01/bin/Debug/net9.0/practise_13_01.deps.json
+/Users/markova_a/Documents/practise_13_01/bin/Debug/net9.0/practise_13_01.runtimeconfig.json
+/Users/markova_a/Documents/practise_13_01/bin/Debug/net9.0/practise_13_01.dll
+/Users/markova_a/Documents/practise_13_01/bin/Debug/net9.0/practise_13_01.pdb
+/Users/markova_a/Documents/practise_13_01/obj/Debug/net9.0/practise_13_01.GeneratedMSBuildEditorConfig.editorconfig
+/Users/markova_a/Documents/practise_13_01/obj/Debug/net9.0/practise_13_01.AssemblyInfoInputs.cache
+/Users/markova_a/Documents/practise_13_01/obj/Debug/net9.0/practise_13_01.AssemblyInfo.cs
+/Users/markova_a/Documents/practise_13_01/obj/Debug/net9.0/practise_13_01.csproj.CoreCompileInputs.cache
+/Users/markova_a/Documents/practise_13_01/obj/Debug/net9.0/practise_13_01.sourcelink.json
+/Users/markova_a/Documents/practise_13_01/obj/Debug/net9.0/practise_13_01.dll
+/Users/markova_a/Documents/practise_13_01/obj/Debug/net9.0/refint/practise_13_01.dll
+/Users/markova_a/Documents/practise_13_01/obj/Debug/net9.0/practise_13_01.pdb
+/Users/markova_a/Documents/practise_13_01/obj/Debug/net9.0/practise_13_01.genruntimeconfig.cache
+/Users/markova_a/Documents/practise_13_01/obj/Debug/net9.0/ref/practise_13_01.dll
