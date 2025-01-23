@@ -12,7 +12,9 @@ class Person {
     public void Intradition(){
         Console.WriteLine($"Моё имя - {Name}.");
     }
-
+    public virtual void Work(){
+        Console.WriteLine($"{Name} работает");
+    }
     public int Agess {
         get{return Age;}
         private set{
@@ -27,12 +29,15 @@ class Person {
     }
 }
 // Создайте класс Employee, который наследуется от Person и добавляет поле position.
-class Employee: Person{
+class Employee : Person{
     public string Position {get ; set ;}
-    public Employee(string name, int age, string position){
-        Name = name;
-        Age = age;
+    public Employee( string position, string name, int age) : base(name, age)
+    {
         Position = position;
+    }
+
+    public override void Work(){
+        Console.WriteLine($"{Name} работает на профессии - {Position}");
     }
 }
 
@@ -40,13 +45,15 @@ class Program
 {
     static void Main()
     {
+        
         Person[]people = {new Person("Tom", 23), new Person("Allan", 31), new Person("Ann", 16)};
 
         foreach(var i in people){
             i.Intradition();
         }
 
-        Employee worker = new Employee("Richard", 19, "cook");
+        Employee worker = new Employee("cook","Richard", 19 );
         worker.Intradition();
+        worker.Work();
     }
 }
