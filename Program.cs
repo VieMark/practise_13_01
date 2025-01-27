@@ -1,6 +1,45 @@
 ﻿namespace practise_13_01;
 using System;
 
+public abstract class Shape{
+    public abstract double GetArea();
+    public abstract double GetPerimeter();
+
+}
+
+public class Rectangle : Shape {
+    public int Wight {get; set;}
+    public int Height {get; set;}
+
+    public Rectangle (int wight, int height) {
+        Wight = wight;
+        Height = height;
+    }
+
+    public override double GetArea()
+    {
+        Console.WriteLine(Wight*Height);
+    }
+    public override double GetPerimeter()
+    {
+        Console.WriteLine((Wight+Height)*2);
+    }
+}
+public class Circle : Shape {
+    public int Radius {get; set;}
+
+    public Circle (int radius) {
+        Radius = radius;
+    }
+    public override double GetArea()
+    {
+        Console.WriteLine(3.14*Radius*Radius);
+    }
+    public override double GetPerimeter()
+    {
+        Console.WriteLine(2*3.14*Radius);
+    }
+}
 
 class Animal {
     public string Breed {get; set;}
@@ -20,9 +59,6 @@ class Animal {
 
     
 }
-
-
-
 class Person {
     public string Name {get; set;}
     public int Age {get; set;}
@@ -63,7 +99,6 @@ class Employee : Person{
         Console.WriteLine($"{Name} работает на профессии - {Position}");
     }
 }
-
 class Program
 {
     static void Main()
@@ -79,7 +114,8 @@ class Program
         worker.Intradition();
         worker.Work();
 
-
         Animal Dog = new Animal("lablador", 3);
+
+        
     }
 }
