@@ -1,5 +1,28 @@
 ﻿namespace practise_13_01;
 using System;
+
+
+class Animal {
+    public string Breed {get; set;}
+    public int Age {get; set;}
+    public Animal(string breed, int age){
+        Breed = breed;
+        Age = age;
+    }
+    public string GetSetBreed{
+        get{return Breed;}
+        set{Breed = value;}
+    }
+    public int GetSetAge{
+        get{return Age;}
+        set{Age = value;}
+    }
+
+    
+}
+
+
+
 class Person {
     public string Name {get; set;}
     public int Age {get; set;}
@@ -55,5 +78,8 @@ class Program
         Employee worker = new Employee("cook","Richard", 19 );
         worker.Intradition();
         worker.Work();
+
+
+        Animal Dog = new Animal("lablador", 3);
     }
 }
