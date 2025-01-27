@@ -18,11 +18,11 @@ public class Rectangle : Shape {
 
     public override double GetArea()
     {
-        Console.WriteLine(Wight*Height);
+        return Wight*Height;
     }
     public override double GetPerimeter()
     {
-        Console.WriteLine((Wight+Height)*2);
+        return (Wight+Height)*2;
     }
 }
 public class Circle : Shape {
@@ -33,11 +33,12 @@ public class Circle : Shape {
     }
     public override double GetArea()
     {
-        Console.WriteLine(3.14*Radius*Radius);
+        return 3.14*Radius*Radius;
     }
     public override double GetPerimeter()
     {
-        Console.WriteLine(2*3.14*Radius);
+        return 2*3.14*Radius;
+        
     }
 }
 
@@ -103,7 +104,7 @@ class Program
 {
     static void Main()
     {
-        
+        /*
         Person[]people = {new Person("Tom", 23), new Person("Allan", 31), new Person("Ann", 16)};
 
         foreach(var i in people){
@@ -115,7 +116,13 @@ class Program
         worker.Work();
 
         Animal Dog = new Animal("lablador", 3);
+        */
 
-        
+        Shape[] massiv = {new Circle(3) , new Circle(12), new Rectangle(12, 5) };
+        foreach (var i in massiv ){
+            Console.WriteLine(i.GetArea);
+            Console.WriteLine(i.GetPerimeter);
+        }
+
     }
 }
